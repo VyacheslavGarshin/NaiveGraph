@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NaiveGraph.Commands", "NaiveGraph.Commands\NaiveGraph.Commands.csproj", "{AE5C11F8-5FF3-4629-9A41-51A1B34D544E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E280A18D-67C1-480A-BA00-FF9D19D63567}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveGraph.Service", "NaiveGraph.Service\NaiveGraph.Service.csproj", "{444FE93F-E359-44FB-A044-78765F704AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveGraph.UnitTests", "NaiveGraph.UnitTests\NaiveGraph.UnitTests.csproj", "{A4BFFF4F-DC22-4AD9-A470-C17239CA0039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveGraph.Client", "NaiveGraph.Client\NaiveGraph.Client.csproj", "{BDBBAE6C-7910-4442-B2A2-F19FB4216ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveGraph.Server", "NaiveGraph.Server\NaiveGraph.Server.csproj", "{D9AFBEDF-05F8-4F54-B860-67F4D8BBC874}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE5C11F8-5FF3-4629-9A41-51A1B34D544E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5C11F8-5FF3-4629-9A41-51A1B34D544E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5C11F8-5FF3-4629-9A41-51A1B34D544E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5C11F8-5FF3-4629-9A41-51A1B34D544E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444FE93F-E359-44FB-A044-78765F704AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444FE93F-E359-44FB-A044-78765F704AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444FE93F-E359-44FB-A044-78765F704AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444FE93F-E359-44FB-A044-78765F704AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BFFF4F-DC22-4AD9-A470-C17239CA0039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BFFF4F-DC22-4AD9-A470-C17239CA0039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BFFF4F-DC22-4AD9-A470-C17239CA0039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BFFF4F-DC22-4AD9-A470-C17239CA0039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDBBAE6C-7910-4442-B2A2-F19FB4216ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBBAE6C-7910-4442-B2A2-F19FB4216ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBBAE6C-7910-4442-B2A2-F19FB4216ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBBAE6C-7910-4442-B2A2-F19FB4216ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AFBEDF-05F8-4F54-B860-67F4D8BBC874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AFBEDF-05F8-4F54-B860-67F4D8BBC874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AFBEDF-05F8-4F54-B860-67F4D8BBC874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AFBEDF-05F8-4F54-B860-67F4D8BBC874}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D78D9527-68A5-4B02-ABCB-74FFF7B289CA}
+	EndGlobalSection
+EndGlobal

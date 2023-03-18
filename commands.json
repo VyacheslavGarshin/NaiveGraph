@@ -1,0 +1,151 @@
+{
+	"nodeType": {
+		"id": "SomeType",
+		"fields": {
+			"id": {
+				"comment": "default column",
+				"type": "string",
+				"required": true,
+				"index": "exact"
+			},
+			"one": {
+				"type": "string",
+				"required": true,
+				"index": "exact"
+			},
+			"two": {
+				"type": "string"
+			}
+		}		
+	},
+	"nodeType": {
+		"SomeType": {
+			"one": {
+				"required": false
+			},
+			"two": null
+		}
+	},
+	"edgeType": {
+		"id": "SomeEdgeType",
+		"fromNodeType": "Type1",
+		"toNodeType": "Type2",
+		"fields": {
+			"id": {
+				"type": "numeric",
+				"required": true
+			},
+			"one": {
+				"type": "string",
+				"required": true,
+				"index": "exact"
+			}
+		}		
+	},
+	"find": {
+		"type": "SomeType",
+		"fields": {}
+	},
+	"find": {
+		"type": "SomeType",
+		"filter": "id > '2000'"
+	},
+	"find": {
+		"type": "SomeType",
+		"filter": "id == '2000'",
+		"fields": {
+			"id": "id",
+			"one": "one",
+			"two": "two",
+			"computed": "one + two",
+			"computed2": "null",
+			"edges": [{
+				"type": "",
+				"filter": "",
+				"fields": {},
+				"nodes": [{
+					"type": "",
+					"filter": "",
+					"fields": {},					
+				}]
+			}],
+			"nodes": [{
+				"comment": "find all nodes from all ages"
+				"type": "",
+				"filter": "",
+				"fields": {},					
+			}]
+		}
+	},
+	"find-path": {
+		"nodes": [
+			{
+				"type": "SomeType",
+				"filter": "id == '2000'"
+			},
+			{
+				"type": "SomeType",
+				"filter": "id == '2001'"
+			}
+		],
+		"filters": [
+			{
+				"type": "OtherType",
+				"filter": "balance > 100"
+			}
+		],
+		"fields": {
+			"SomeType": {
+				"id": "id",
+				"one": "one"
+			},
+			"OtherType": {
+				"id": "id"
+			}
+		}
+	},
+	"insert": {
+		"type": "SomeType",
+		"fields": {
+			"one": null,
+			"two": "data",
+			"children": [
+				{
+					"filter": "id = '2000'",
+					"weight": 1
+				}
+			]
+		}
+	},
+	"update": {
+		"type": "SomeType",
+		"filter": "id = '2000'",
+		"fields": {
+			"one": null,
+			"two": "data",
+			"three": {
+				"formula": "two"
+			},
+			"children": [
+				{
+					"command": "insert",
+					"filter": "id = '2000'",
+					"weight": 1
+				},
+				{
+					"command": "update",
+					"filter": "id = '2000'",
+					"weight": 10.1
+				},
+				{
+					"command": "delete",
+					"filter": "id = '2000'"
+				}
+			]
+		}
+	},
+	"delete": {
+		"type": "SomeType",
+		"filter": "id = '2000'"
+	}
+}
